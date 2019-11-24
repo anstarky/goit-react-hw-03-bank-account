@@ -1,0 +1,35 @@
+.balance {
+    padding: 40px;
+}
+
+.balance__txt {
+    margin: 0 15px;
+
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgb(92, 105, 117);
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 30;
+}
+
+.balance__txt::before {
+    display: inline-block;
+    padding: 0 8px 15px 0;
+
+    font-size: 20px;
+    line-height: 24px;
+    transform: scale(1.2);
+}
+
+.balance__txt:nth-child(1)::before {
+    content: '↑';
+    color: #05af05
+
+}
+
+.balance__txt:nth-child(2)::before {
+    content: '↓';
+    color: #ff0000;
+
+}
